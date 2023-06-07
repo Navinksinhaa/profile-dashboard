@@ -1,0 +1,84 @@
+.background {
+
+  height: 500px;
+  margin: 0;
+}
+.background::before {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  width: 100vh;
+  height: 100vh;
+  background: #008dff;
+  border-radius: 50%;
+  transform-origin: bottom;
+  transform: translateX(-50%) scale(4);
+}
+
+.card {
+  position: relative;
+  top: 30%;
+  margin-left: 35%;
+  width: 400px;
+  height: 400px;
+}
+.card-title {
+  padding: 20px;
+  text-align: center;
+}
+
+/* profile */
+
+.profile {
+  width: 50px;
+  height: 50px;
+  border-radius: 50px;
+  margin: 0 10px;
+}
+
+.info {
+  margin-top: 75px;
+  width: 80%;
+  padding: 0 30px;
+}
+
+.header {
+  border-bottom: 1px solid black;
+  padding-bottom: 20px;
+}
+
+.body {
+  display: grid;
+  grid-template-columns: 35% 65%;
+}
+.body-left {
+  padding: 5%;
+}
+.picture {
+  width: 200px;
+  height: 200px;
+  border-radius: 100px;
+}
+.list-group-flush {
+  overflow: scroll;
+}
+.nav-item:hover {
+  color: white;
+  font-weight: 700;
+  background-color: black;
+}
+.nav-item {
+  font-weight: 500;
+  color: white;
+  text-decoration: none;
+  font-size: 20px;
+}
+.dashboard {
+  background-color: blue;
+  border-radius: 25px;
+  margin-left: 25px;
+  height: 400px;
+  margin-top: 100px;
+  width: 150px;
+}
